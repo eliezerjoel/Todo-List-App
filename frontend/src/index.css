@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply bg-white rounded relative overflow-hidden shadow-md hover:shadow-lg;
+}
+.badge{
+    @apply bg-slate-200 absolute top-0 ml-2 mt-2 text-orange-300 text-xs font-bold rounded-full p-2 uppercase ;
+}
+
+.btn{
+    @apply rounded-full py-2 px-3 font-bold cursor-pointer tracking-wider text-xs;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.create_form input{
+    width: 300px;
+    padding: 10px;
+    border-bottom: 2px;
+    outline: auto;
+}
+.create_form button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.task{
+    display: flex;
+    align-items: center;
+    width: 345px;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    height: 35px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 2px;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin: 2px ;
+
+}
+.checkbox p{
+    padding: 7px;
+}
+.line_through{
+    text-decoration: line-through;
+}
+.checkbox icon{
+    margin-right: 5px;
+    font-size: 15px;
+
+}
+.task div span{
+    margin: 0px 5px 0px 4px;
+}
+
+.task div .icon{
+    cursor: pointer;
+}
